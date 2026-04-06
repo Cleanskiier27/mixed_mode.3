@@ -1,0 +1,57 @@
+{
+	"folders": [
+		{
+			"path": "../Documents/fsnotifier-wsl/lldb/helpers/mixed_mode"
+		},
+		{
+			"path": "../Documents/fsnotifier-wsl/lldb/helpers/renderers"
+		},
+		{
+			"path": "../Documents/fsnotifier-wsl/lldb/helpers/stepping"
+		}
+	],
+	"settings": {
+		"lldb.verboseLogging": true
+	},
+	"extensions": {
+		"recommendations": [
+			"vadimcn.vscode-lldb",
+			"ms-vscode.cpptools"
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "LLDB: Launch executable",
+				"type": "lldb",
+				"request": "launch",
+				"program": "${input:programPath}",
+				"args": [],
+				"cwd": "${workspaceFolder}"
+			},
+			{
+				"name": "LLDB: Attach to process",
+				"type": "lldb",
+				"request": "attach",
+				"pid": "${command:pickProcess}"
+			},
+			{
+				"name": "C++: Windows launch (cppvsdbg)",
+				"type": "cppvsdbg",
+				"request": "launch",
+				"program": "${input:programPath}",
+				"args": [],
+				"cwd": "${workspaceFolder}"
+			}
+		],
+		"inputs": [
+			{
+				"id": "programPath",
+				"type": "promptString",
+				"description": "Absolute path to the executable to debug",
+				"default": "C:/Users/ceans/OneDrive/Desktop/Documents/fsnotifier-wsl/lldb/helpers/mixed_mode/build/helper.exe"
+			}
+		]
+	}
+}
