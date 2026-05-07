@@ -5,7 +5,7 @@
     "cdn_enabled": true,
     "auto_verify_checksums": true,
     "max_concurrent_downloads": 3,
-    "retry_attempts": 3,
+    "retry_attempts": 100,
     "timeout_seconds": 300
 }<manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="string"
