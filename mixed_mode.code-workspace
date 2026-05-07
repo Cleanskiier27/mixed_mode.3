@@ -8,10 +8,17 @@
 		},
 		{
 			"path": "../Documents/fsnotifier-wsl/lldb/helpers/stepping"
+		},
+		{
+			"name": "GATES",
+			"path": "../../../.config/GATES"
 		}
 	],
 	"settings": {
-		"lldb.verboseLogging": true
+		"lldb.verboseLogging": true,
+		"githubPullRequests.ignoredPullRequestBranches": [
+			"main"
+		]
 	},
 	"extensions": {
 		"recommendations": [
