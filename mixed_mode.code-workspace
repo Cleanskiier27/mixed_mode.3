@@ -18,7 +18,8 @@
 		"lldb.verboseLogging": true,
 		"githubPullRequests.ignoredPullRequestBranches": [
 			"main"
-		]
+		],
+		"powershell.cwd": "mixed_mode"
 	},
 	"extensions": {
 		"recommendations": [
